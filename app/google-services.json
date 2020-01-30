@@ -1,0 +1,99 @@
+{
+  "project_info": {
+    "project_number": "76143183678",
+    "firebase_url": "https://gameofchats-9a7cd.firebaseio.com",
+    "project_id": "gameofchats-9a7cd",
+    "storage_bucket": "gameofchats-9a7cd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:76143183678:android:e7c9386b191ceda50dce6f",
+        "android_client_info": {
+          "package_name": "com.example.samplechatalpha"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "76143183678-tcvmb9alh2pbeom5u6aslf2bk35dahk8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.samplechatalpha",
+            "certificate_hash": "db118d9d89a681c47cf4d25ef7da295a605cc036"
+          }
+        },
+        {
+          "client_id": "76143183678-544v4k1ajmrt0lb6h7mfavg9rvtqqlvm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwhEfhn3xSzJU-WzKag6elINnvtfdm2Eo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "76143183678-544v4k1ajmrt0lb6h7mfavg9rvtqqlvm.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "76143183678-vbileieks9ok73ad7ufh99k6ggui6cr1.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "drsarrollo.gameOfChat"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:76143183678:android:8d281f6596d6c7c50dce6f",
+        "android_client_info": {
+          "package_name": "com.koddev.chatapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "76143183678-6erb1ouonb0jacp8bb490pmogac6q536.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.koddev.chatapp",
+            "certificate_hash": "db118d9d89a681c47cf4d25ef7da295a605cc036"
+          }
+        },
+        {
+          "client_id": "76143183678-544v4k1ajmrt0lb6h7mfavg9rvtqqlvm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwhEfhn3xSzJU-WzKag6elINnvtfdm2Eo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "76143183678-544v4k1ajmrt0lb6h7mfavg9rvtqqlvm.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "76143183678-vbileieks9ok73ad7ufh99k6ggui6cr1.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "drsarrollo.gameOfChat"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

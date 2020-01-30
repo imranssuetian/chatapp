@@ -7,9 +7,6 @@ public class Chatlist {
         this.id = id;
     }
 
-    public Chatlist() {
-    }
-
     public String getId() {
         return id;
     }
@@ -17,4 +14,10 @@ public class Chatlist {
     public void setId(String id) {
         this.id = id;
     }
+
+    //ignore
+    public Chatlist() {
+    }
+
+
 }

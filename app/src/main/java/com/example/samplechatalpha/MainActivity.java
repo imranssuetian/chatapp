@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
 
         usersList = new ArrayList<>();
 
-        reference = FirebaseDatabase.getInstance().getReference("Chatlist").child(fuser.getUid());
+        reference = FirebaseDatabase.getInstance().getReference("Chatlist").child("88hai1vEGyeE68P6aS39EEvkaZ22"); //88hai1vEGyeE68P6aS39EEvkaZ22 //fuser.getUid()
         reference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
@@ -68,13 +68,12 @@ public class MainActivity extends AppCompatActivity {
 
         updateToken(FirebaseInstanceId.getInstance().getToken());
 
-
     }
 
     private void updateToken(String token){
         DatabaseReference reference = FirebaseDatabase.getInstance().getReference("Tokens");
         Token token1 = new Token(token);
-        reference.child(fuser.getUid()).setValue(token1);
+        reference.child("88hai1vEGyeE68P6aS39EEvkaZ22").setValue(token1); //88hai1vEGyeE68P6aS39EEvkaZ22 //fuser.getUid()
     }
 
     private void chatList() {

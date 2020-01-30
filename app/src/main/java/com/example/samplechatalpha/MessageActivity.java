@@ -105,7 +105,7 @@ public class MessageActivity extends AppCompatActivity {
                 notify = true;
                 String msg = text_send.getText().toString();
                 if (!msg.equals("")){
-                    sendMessage(fuser.getUid(), userid, msg);
+                    sendMessage("88hai1vEGyeE68P6aS39EEvkaZ22", userid, msg); //88hai1vEGyeE68P6aS39EEvkaZ22 //fuser.getUid()
                 } else {
                     Toast.makeText(MessageActivity.this, "You can't send empty message", Toast.LENGTH_SHORT).show();
                 }
@@ -128,7 +128,7 @@ public class MessageActivity extends AppCompatActivity {
                     Glide.with(getApplicationContext()).load(user.getImageURL()).into(profile_image);
                 }
 
-                readMesagges(fuser.getUid(), userid, user.getImageURL());
+                readMesagges("88hai1vEGyeE68P6aS39EEvkaZ22", userid, user.getImageURL()); //88hai1vEGyeE68P6aS39EEvkaZ22 //fuser.getUid()
             }
 
             @Override
@@ -147,7 +147,7 @@ public class MessageActivity extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 for (DataSnapshot snapshot : dataSnapshot.getChildren()){
                     Chat chat = snapshot.getValue(Chat.class);
-                    if (chat.getReceiver().equals(fuser.getUid()) && chat.getSender().equals(userid)){
+                    if (chat.getReceiver().equals("88hai1vEGyeE68P6aS39EEvkaZ22") && chat.getSender().equals(userid)){ //88hai1vEGyeE68P6aS39EEvkaZ22 //fuser.getUid()
                         HashMap<String, Object> hashMap = new HashMap<>();
                         hashMap.put("isseen", true);
                         snapshot.getRef().updateChildren(hashMap);
@@ -177,7 +177,7 @@ public class MessageActivity extends AppCompatActivity {
 
         // add user to chat fragment
         final DatabaseReference chatRef = FirebaseDatabase.getInstance().getReference("Chatlist")
-                .child(fuser.getUid())
+                .child("88hai1vEGyeE68P6aS39EEvkaZ22") //88hai1vEGyeE68P6aS39EEvkaZ22 //fuser.getUid()
                 .child(userid);
 
         chatRef.addListenerForSingleValueEvent(new ValueEventListener() {
@@ -196,12 +196,12 @@ public class MessageActivity extends AppCompatActivity {
         
         final DatabaseReference chatRefReceiver = FirebaseDatabase.getInstance().getReference("Chatlist")
                 .child(userid)
-                .child(fuser.getUid());
-        chatRefReceiver.child("id").setValue(fuser.getUid());
+                .child("88hai1vEGyeE68P6aS39EEvkaZ22"); //88hai1vEGyeE68P6aS39EEvkaZ22 //fuser.getUid()
+        chatRefReceiver.child("id").setValue("88hai1vEGyeE68P6aS39EEvkaZ22"); //88hai1vEGyeE68P6aS39EEvkaZ22 //fuser.getUid()
 
         final String msg = message;
 
-        reference = FirebaseDatabase.getInstance().getReference("Users").child(fuser.getUid());
+        reference = FirebaseDatabase.getInstance().getReference("Users").child("88hai1vEGyeE68P6aS39EEvkaZ22"); //88hai1vEGyeE68P6aS39EEvkaZ22 //fuser.getUid()
         reference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
@@ -227,7 +227,7 @@ public class MessageActivity extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 for (DataSnapshot snapshot : dataSnapshot.getChildren()){
                     Token token = snapshot.getValue(Token.class);
-                    Data data = new Data(fuser.getUid(), R.mipmap.ic_launcher, username+": "+message, "New Message",
+                    Data data = new Data("88hai1vEGyeE68P6aS39EEvkaZ22", R.mipmap.ic_launcher, username+": "+message, "New Message", //88hai1vEGyeE68P6aS39EEvkaZ22 //fuser.getUid()
                             userid);
 
                     Sender sender = new Sender(data, token.getToken());
@@ -292,7 +292,7 @@ public class MessageActivity extends AppCompatActivity {
     }
 
     private void status(String status){
-        reference = FirebaseDatabase.getInstance().getReference("Users").child(fuser.getUid());
+        reference = FirebaseDatabase.getInstance().getReference("Users").child("88hai1vEGyeE68P6aS39EEvkaZ22"); //88hai1vEGyeE68P6aS39EEvkaZ22 //fuser.getUid()
 
         HashMap<String, Object> hashMap = new HashMap<>();
         hashMap.put("status", status);
